@@ -1,0 +1,56 @@
+.flex{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.boxes-card{
+    display:flex;
+    
+}
+.box-card{
+    display:flex;
+    flex-flow:row;
+    justify-content: space-around;
+    margin:1em;
+    padding:1em;
+    border-radius:25px;
+    width : 400px;
+    box-shadow:5px 5px 5px rgba(0, 0, 0,0.4);
+    background-color:#eeeeee;
+}
+.name-card{
+    display : flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+.box-card .image-card{
+    border-radius:50%;
+    height:200px;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.4)
+}
+
+.bigblock-status{
+    display:flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.status-card{
+    display:inline-block;
+    height:10px;
+    width:10px;
+    border-radius: 50%;
+    box-shadow:1px 1px 5px rgba(0, 0, 0,0.4);
+}
+.status-text{
+    display:inline-block;
+    margin : 5px;
+}
+.alive-status{
+    background: lightgreen;
+}
+.dead-status{
+    background:darkred;
+}
+.unknown-status{
+    background:orange;
+}
