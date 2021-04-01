@@ -19,7 +19,7 @@ function App() {
   };
   return (
     <>
-       <div className = "block-search">
+      <div className="block-search">
         <h1>My first React API</h1>
         <h3>Type a name from the Rick and Morty Universe</h3>
         <input className="search-input"
@@ -27,8 +27,7 @@ function App() {
           onChange={(e) => setSearch((e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1)))}
           value={search}
         />
-      </div> 
-
+      </div>
       <DisplayCharacterList characters={characters} />
     </>
   );
