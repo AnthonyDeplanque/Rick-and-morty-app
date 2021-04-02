@@ -18,23 +18,28 @@
 .name-card {
     display:inline-block;
     width: 100%;
+    text-align:center;
 }
 
 .misc-card {
-    
+    display:flex;
+    flex-direction: row;
 }
 
 .box-card .image-card {
     border: solid 3px rgb(150, 150, 150);
+    float:left;
     border-radius: 50%;
     height: 200px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4)
 }
 
 .bigblock-status {
+    width : 75%;
+    margin-right : 15px;
     display: flex;
-    justify-content: flex-end;
     text-align: right;
+    flex-direction: column;
 }
 
 .status-card {

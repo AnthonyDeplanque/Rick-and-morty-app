@@ -24,7 +24,10 @@ function App() {
         <h3>Type a name from the Rick and Morty Universe</h3>
         <input className="search-input"
           type='text'
-          onChange={(e) => setSearch((e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1)))}
+          onChange={(e) => 
+            setSearch(
+              (e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1))
+              )}
           value={search}
         />
       </div>
