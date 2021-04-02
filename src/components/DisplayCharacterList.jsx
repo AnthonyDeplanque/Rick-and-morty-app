@@ -3,7 +3,7 @@ import Characters from './Characters';
 const DisplayCharacterList = ({characters}) =>{
 
     return(
-        <div className="flex">
+        <div className="boxes-card">
             {characters.map (c =>{
                 return (
                     <Characters {...c} />
