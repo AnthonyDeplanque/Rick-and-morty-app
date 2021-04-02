@@ -1,58 +1,63 @@
-.flex{
-    display:flex;
+.boxes-card {
+    display: flex;
     justify-content: space-around;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
-.boxes-card{
-    display:flex;
+
+.box-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 25px;
+    min-width: 400px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    background-color: #eeeeee;
+}
+
+.name-card {
+    display:inline-block;
+    width: 100%;
+}
+
+.misc-card {
     
 }
-.box-card{
-    display:flex;
-    flex-flow:row;
-    justify-content: space-around;
-    margin:1em;
-    padding:0.5em;
-    border-radius:25px;
-    min-width : 400px;
-    box-shadow:5px 5px 5px rgba(0, 0, 0,0.4);
-    background-color:#eeeeee;
-}
-.name-card{
-    display : flex;
-    justify-content:space-around;
-    flex-direction: column;
-}
-.box-card .image-card{
-    border : solid 3px rgb(150,150,150);
-    border-radius:50%;
-    height:200px;
-    box-shadow:5px 5px 5px rgba(0,0,0,0.4)
 
+.box-card .image-card {
+    border: solid 3px rgb(150, 150, 150);
+    border-radius: 50%;
+    height: 200px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4)
 }
 
-.bigblock-status{
-    display:flex;
-    flex-flow: row;
-    justify-content: space-around;
+.bigblock-status {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
 }
-.status-card{
-    display:inline-block;
-    height:10px;
-    width:10px;
+
+.status-card {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
     border-radius: 100%;
-    box-shadow:1px 1px 5px rgba(0, 0, 0,0.4);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
-.status-text{
-    display:inline-block;
-    margin : 5px;
+
+.status-text {
+    display: inline-block;
+    margin: 5px;
 }
-.alive-status{
+
+.alive-status {
     background: rgb(2, 187, 2);
 }
-.dead-status{
-    background:rgb(172, 4, 4);
+
+.dead-status {
+    background: rgb(172, 4, 4);
 }
-.unknown-status{
-    background:rgb(255, 153, 0);
+
+.unknown-status {
+    background: rgb(255, 153, 0);
 }
